@@ -1,0 +1,91 @@
+ nav {
+      background-color: White ;
+      color: #1B263B;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .nav-container {
+      max-width: 1500px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+    .nav-flex {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 80px;
+    }
+    .logo-container {
+      display: flex;
+      align-items: center;
+    }
+    .logo {
+      /* height: 60px; */
+      width: 140px;
+      margin-right: 0.5rem;
+    }
+    .brand {
+      font-size: 1.25rem;
+      font-weight: bold;
+    }
+    .desktop-menu {
+      flex-grow: 1;
+      display: flex;
+      justify-content: center;
+    }
+    .desktop-menu a {
+      color: #1B263B ;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      font-size: 0.975rem;
+      font-weight: 500;
+      border-radius: 4px;
+      margin: 0 0.5rem;
+    }
+    .desktop-menu a:hover {
+      background-color: #8093a5;
+    }
+    .mobile-menu-button {
+      display: none;
+      background: none;
+      border: none;
+      color: #1B263B;
+      cursor: pointer;
+      padding: 0.5rem;
+    }
+    .mobile-menu-button svg {
+      width: 24px;
+      height: 24px;
+    }
+    .mobile-menu {
+      display: none;
+    }
+    .mobile-menu.open {
+      display: block;
+      padding: 0.5rem 1rem 1rem;
+    }
+    .mobile-menu a {
+      display: block;
+      color: #1B263B;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      font-weight: 500;
+      border-radius: 4px;
+      margin-bottom: 0.25rem;
+    }
+    .mobile-menu a:hover {
+      background-color: #2C3E50;
+    }
+    @media (max-width: 768px) {
+      .desktop-menu {
+        display: none;
+      }
+      .mobile-menu-button {
+        display: block;
+      }
+    }
+    @media (min-width: 769px) {
+      .mobile-menu {
+        display: none !important;
+      }
+    }
