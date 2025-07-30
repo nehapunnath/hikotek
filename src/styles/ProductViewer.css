@@ -54,8 +54,13 @@
 
 .product-preview {
   flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Center the image horizontally */
   text-align: center;
 }
+
 
 .zoom-image {
   width: 100%;
