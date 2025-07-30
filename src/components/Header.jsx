@@ -21,15 +21,14 @@ function Header() {
                   src={HikotekLogo}
                   alt="Hikotek Logo"
                 />
-                {/* <span className="brand">Hikotek</span> */}
               </div>
 
               <div className="desktop-menu">
                 <a href="#">Home</a>
-                <a href="#">About Us</a>
-                <a href="#">Products</a>
-                <a href="#">Contact Us</a>
-                <a href="#">Distributor Apply</a>
+                <a href="/about">About Us</a>
+                <a href="/product">Products</a>
+                <a href="/contact">Contact Us</a>
+                <a href="/distributor">Distributor Apply</a>
               </div>
 
               <button
