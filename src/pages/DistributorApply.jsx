@@ -1,6 +1,7 @@
 import React from 'react';
 import HikotekLogo from '/Hikotek_Logo.png'
 import '../styles/Header.css';
+import '../styles/DistributorApply.css'
 
 
 
