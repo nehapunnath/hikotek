@@ -1,14 +1,15 @@
 .footer {
-  background: linear-gradient(135deg, #1e293b, #475569); /* Slate gradient for contrast */
+  background: linear-gradient(135deg, #1e293b, #475569);
   color: #ffffff;
   display: flex;
   justify-content: space-between;
-  padding: 3rem 2rem;
+  padding: 2rem 1.5rem; /* ↓ reduced from 3rem 2rem */
   flex-wrap: wrap;
   position: relative;
   overflow: hidden;
   box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.2);
 }
+
 
 .footer::before {
   content: '';
@@ -26,11 +27,12 @@
   flex: 1;
   min-width: 200px;
   max-width: 300px;
-  margin: 1.5rem;
+  margin: 1rem; /* ↓ reduced from 1.5rem */
   text-align: center;
   position: relative;
   z-index: 1;
 }
+
 
 .footer-logo {
   width: 140px;

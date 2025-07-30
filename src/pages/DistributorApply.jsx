@@ -1,4 +1,8 @@
 import React from 'react';
+import HikotekLogo from '/Hikotek_Logo.png'
+import '../styles/Header.css';
+
+
 
 const DistributorApply = () => {
     const products = [
@@ -26,36 +30,42 @@ const DistributorApply = () => {
 
     return (
         <div className="min-h-screen bg-white text-gray-800 font-sans">
-            {/* --- Product Scrolling Section --- */}
-            {/* --- Product Scrolling Section --- */}
-<section className="py-16 bg-white">
-  <div className="max-w-7xl mx-auto px-6 lg:px-8">
-    <div className="text-center mb-12">
-      <h2 className="text-4xl font-bold text-blue-900 mb-4">Our Products</h2>
-      <div className="w-24 h-1 bg-blue-600 mx-auto"></div>
-      {/* <p className="mt-4 text-lg text-blue-800">High-quality tools trusted by professionals worldwide</p> */}
-    </div>
-    
-    <div className="relative overflow-hidden">
-      <div className="flex animate-marquee whitespace-nowrap gap-8 py-4">
-        {[...products, ...products].map((item, i) => (
-          <div key={i} className="inline-flex flex-col items-center w-56 px-4 py-6 bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-2">
-            <div className="w-40 h-40 mb-4 p-2 bg-white rounded-lg flex items-center justify-center">
-              <img
-                src={item.image}
-                alt={item.name}
-                className="max-h-full max-w-full object-contain"
-              />
+            <div className="logo-container p-4">
+                <img
+                    className="logo"
+                    src={HikotekLogo}
+                    alt="Hikotek Logo"
+                />
             </div>
-            <p className="text-lg font-medium text-blue-900 text-center w-full truncate px-2">
-              {item.name.length > 25 ? `${item.name.substring(0, 22)}...` : item.name}
-            </p>
-          </div>
-        ))}
-      </div>
-    </div>
-  </div>
-</section>
+            {/* --- Product Scrolling Section --- */}
+            <section className="py-16 bg-white">
+                <div className="max-w-7xl mx-auto px-6 lg:px-8">
+                    <div className="text-center mb-12">
+                        <h2 className="text-4xl font-bold text-blue-900 mb-4">Our Products</h2>
+                        <div className="w-24 h-1 bg-blue-600 mx-auto"></div>
+                        {/* <p className="mt-4 text-lg text-blue-800">High-quality tools trusted by professionals worldwide</p> */}
+                    </div>
+
+                    <div className="relative overflow-hidden">
+                        <div className="flex animate-marquee whitespace-nowrap gap-8 py-4">
+                            {[...products, ...products].map((item, i) => (
+                                <div key={i} className="inline-flex flex-col items-center w-56 px-4 py-6 bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-2">
+                                    <div className="w-40 h-40 mb-4 p-2 bg-white rounded-lg flex items-center justify-center">
+                                        <img
+                                            src={item.image}
+                                            alt={item.name}
+                                            className="max-h-full max-w-full object-contain"
+                                        />
+                                    </div>
+                                    <p className="text-lg font-medium text-blue-900 text-center w-full truncate px-2">
+                                        {item.name.length > 25 ? `${item.name.substring(0, 22)}...` : item.name}
+                                    </p>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </div>
+            </section>
 
             {/* --- Client Logos --- */}
             <section className="py-16 bg-blue-50">
@@ -88,7 +98,7 @@ const DistributorApply = () => {
                             Join our network of premium tool distributors and grow your business with our exclusive product line
                         </p> */}
                     </div>
-                    
+
                     <form className="max-w-4xl mx-auto bg-white p-10 rounded-xl shadow-2xl text-gray-800">
                         <div className="grid md:grid-cols-2 gap-6 mb-8">
                             <div>
@@ -146,12 +156,12 @@ const DistributorApply = () => {
                             Hear what our partners say about working with us
                         </p>
                     </div>
-                    
+
                     <div className="grid md:grid-cols-3 gap-10">
                         {[
                             {
                                 quote: "Hikotek's dedication to quality and service stands out. Their team is knowledgeable, responsive, and ensures specific needs are met.",
-                                
+
                             },
                             {
                                 quote: "Hikotek has exceeded expectations as a reliable partner for mechanical components. Their expertise in electromechanical assemblies is exceptional.",
@@ -159,7 +169,7 @@ const DistributorApply = () => {
                             },
                             {
                                 quote: "Hikotek provides a customer-centric experience with highly communicative teams. They provide fast turnaround times and tailored solutions.",
-                                
+
                             }
                         ].map((testimonial, i) => (
                             <div key={i} className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-blue-100 relative">

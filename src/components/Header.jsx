@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import '../styles/Header.css';
 import HikotekLogo from '/Hikotek_Logo.png'
+import ProductDropdown from './ProductDropdown';
 
 
 function Header() {
@@ -24,9 +25,10 @@ function Header() {
               </div>
 
               <div className="desktop-menu">
-                <a href="#">Home</a>
+                <a href="/">Home</a>
                 <a href="/about">About Us</a>
-                <a href="/product">Products</a>
+                {/* <a href="/product">Products</a> */}
+                <ProductDropdown/>
                 <a href="/contact">Contact Us</a>
                 <a href="/distributor">Distributor Apply</a>
               </div>
@@ -46,11 +48,11 @@ function Header() {
             </div>
 
             <div className={`mobile-menu ${isMenuOpen ? 'open' : ''}`}>
-              <a href="#">Home</a>
-              <a href="#">About Us</a>
-              <a href="#">Products</a>
-              <a href="#">Contact Us</a>
-              <a href="#">Distributor Apply</a>
+               <a href="/">Home</a>
+                <a href="/about">About Us</a>
+                <a href="/product">Products</a>
+                <a href="/contact">Contact Us</a>
+                <a href="/distributor">Distributor Apply</a>
             </div>
           </div>
         </nav>
